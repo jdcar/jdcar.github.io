@@ -1,15 +1,65 @@
 *{
     margin:0;
     padding: 0;
+    background-color: #FFFAF0;
+    box-sizing: border-box;
+
 }
 
-.container {
-    margin-top: 50px;
+/* Suppressing wrapper for now */
+/* #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1129px;
 
+} */
+
+.container {
+    max-width: 100%;
+    
 }
 
 h1  {
-    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 34px;
     text-align: left;
     color: darkblue;
+    background-color: #9ED9B8;
+    padding-top: 8px;
+
+}
+
+nav {
+    background-color: #9ED9B8;
+    width: 100%;
+    position: relative;
+}
+
+#Contact-button, #Portfolio-button, #Aboutme-button {
+
+    background-color: #DCDCDC;
+    color: #006699;
+}
+
+.row {
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 25px;
+}
+
+form {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 100px;
+    /* padding: 50px; */
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../img/studs1.jpg");
+    background-size: 1066px;
+    background-position: center;
 }
