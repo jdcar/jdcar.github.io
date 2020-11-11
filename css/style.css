@@ -6,6 +6,9 @@
 
 }
 
+body {
+    background-color: #FFFAF0;
+}
 /* Suppressing wrapper for now */
 /* #wrapper {
     margin-left:auto;
@@ -15,8 +18,12 @@
 } */
 
 .container {
-    max-width: 100%;
-    
+    margin: 25px;
+    /* border-width: 3px;  */
+    /* Border (suppressed didn't like it) */
+    /* border-color: #DCDCDC;
+    border-style: solid; */
+
 }
 
 h1  {
@@ -59,7 +66,12 @@ form {
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../img/studs1.jpg");
-    background-size: 1066px;
+    background-image: url("../img/plant3.jpg");
+    background-size: 1300px;
     background-position: center;
+}
+
+/* Portfolio headings */
+.card-header {
+    font-size: 25px;
 }
