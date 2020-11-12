@@ -5,7 +5,7 @@
     box-sizing: border-box;
 
 }
-
+/* Set background color */
 body {
     background-color: #FFFAF0;
 }
@@ -18,14 +18,14 @@ body {
 } */
 
 .container {
-    margin: 25px;
+    /* margin: 25px; */
     /* border-width: 3px;  */
     /* Border (suppressed didn't like it) */
     /* border-color: #DCDCDC;
     border-style: solid; */
 
 }
-
+/* Give name style */
 h1  {
     font-family: 'Comfortaa', cursive;
     font-size: 34px;
@@ -35,19 +35,37 @@ h1  {
     padding-top: 8px;
 
 }
-
+/* Navigation bar style */
 nav {
     background-color: #9ED9B8;
     width: 100%;
     position: relative;
 }
-
+/* Style for nav buttons */
 #Contact-button, #Portfolio-button, #Aboutme-button {
 
     background-color: #DCDCDC;
     color: #006699;
 }
+/* Add hover pseudo to buttons */
+.nav-link:hover{
+    background-color:#dcdcdc71;
+}
 
+/* Change color for buttons to pink */
+#github_button, #orcid_button {
+    background-color: #DEA5A4;
+    border-color: #DEA5A4;
+    color: black;
+}
+
+/* Give buttons hover color */
+#github_button:hover, #orcid_button:hover {
+    background-color:#d7837f;
+    border-color: #d7837f;
+}
+
+/* Giv margins and padding to rows so boxes are centered */
 .row {
     margin-top: 0px;
     margin-left: 100px;
@@ -55,13 +73,18 @@ nav {
     padding: 25px;
 }
 
+#toprow {
+    padding-bottom: 0px;
+}
+
+/* Give style to contact form */
 form {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 100px;
     /* padding: 50px; */
 }
-
+/* Give the pages a heading background picture */
 .hero {
     height: 200px;
     width: 100%;
@@ -75,3 +98,45 @@ form {
 .card-header {
     font-size: 25px;
 }
+/* Remove padding from contact form  */
+#formbox {
+    padding-top: 0;
+}
+
+p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+img{
+    border: solid;
+    border-color: #DCDCDC;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero {
+        display: none;
+      }
+    body {
+        margin: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .row {
+        /* width: 100%; */
+        margin: 0px;
+        /* padding: 0px; */
+
+    }
+
+    #media-body {
+        width: 100%;
+    } 
+
+    .mr-3 {
+        width: 75px;
+    }
+
+
