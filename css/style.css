@@ -103,17 +103,36 @@ form {
     padding-top: 0;
 }
 
+/* Format the  */
 p {
     padding-top: 0px;
     margin-top: 0px;
 }
 
+/* Style border around the images */
 img{
     border: solid;
     border-color: #DCDCDC;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Create a footer */
+footer {
+    background-color: #DCDCDC;
+    padding-bottom: 20px;
+    padding-top: 14px;
+    line-height: normal;
+}
+
+/* Fix the position for the footer on the contact page so it sits at the bottom */
+.footer-contact {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/* Media queries for mobile responsiveness */
 @media only screen and (max-width: 600px) {
     .hero {
         display: none;
@@ -138,5 +157,4 @@ img{
     .mr-3 {
         width: 75px;
     }
-
 
