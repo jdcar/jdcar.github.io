@@ -6,11 +6,17 @@ Jamie Carlstone
 
 ## Description
 
-This is my online professional profile. The style includes @media queries so it is responsive on desktop mobile devices. 
+This is my online professional profile. The style includes @media queries so it is responsive on mobile devices. 
 
-## Acknowledgement
+## Screenshot
+
+A screenshot of the application is available: 
+
+## Acknowledgements
 
 https://www.makeareadme.com/ 
+
+
 
 
 
