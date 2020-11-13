@@ -10,7 +10,7 @@ This is my online professional profile. The style includes @media queries so it 
 
 ## Screenshot
 
-A screenshot of the application is available: 
+A screenshot of the application is available: https://github.com/jdcar/jdcar.github.io/blob/main/img/screenshot.JPG
 
 ## Acknowledgements
 
