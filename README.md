@@ -7,6 +7,7 @@ Jamie Carlstone
 ## Description
 
 This is my online professional profile. The style includes @media queries so it is responsive on mobile devices. 
+Tested live with a Samsung Galaxy S9, Dell 23" desktop, and Dell 14" laptop.
 
 ## Screenshot
 
