@@ -15,13 +15,22 @@ body {
 }
 
 /* Give name style */
-h1  {
+h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 34px;
     text-align: left;
     color: darkblue;
     background-color: #9ED9B8;
     padding-top: 8px;
+
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    text-align: center;
+    color: darkblue;
+    
 
 }
 /* Navigation bar style */
@@ -58,8 +67,8 @@ nav {
 /* Giv margins and padding to rows so boxes are centered */
 .row {
     margin-top: 0px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
     padding: 25px;
 }
 
@@ -80,7 +89,7 @@ form {
 .hero {
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     background-image: url("../img/plant3.jpg");
     background-size: 1300px;
     background-position: center;
@@ -105,6 +114,15 @@ p {
 img{
     border: solid;
     border-color: #DCDCDC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#photo_me {
+    width: 250px;
+    border-radius: 50%;
 }
 
 #icons {
