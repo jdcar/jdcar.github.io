@@ -42,7 +42,7 @@ nav {
 }
 
 /* Change color for buttons to pink */
-#github_button, #orcid_button, #contact_submit {
+#github_button, #orcid_button, #contact_submit, #linkedin_button {
     
     background-color: #DEA5A4;
     border-color: #DEA5A4;
@@ -50,7 +50,7 @@ nav {
 }
 
 /* Give buttons hover color */
-#github_button:hover, #orcid_button:hover, #contact_submit {
+#github_button:hover, #orcid_button:hover, #contact_submit:hover, #linkedin_button:hover {
     background-color:#d7837f;
     border-color: #d7837f;
 }
@@ -107,6 +107,16 @@ img{
     border-color: #DCDCDC;
 }
 
+#icons {
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+.logos {
+    border-style: none;
+}
+
 /* Handling a footer in different screen sizes: https://codepen.io/cbracco/pen/zekgx */
 
 #footer_contact {
@@ -115,6 +125,8 @@ img{
     bottom: 0;
     left: 0; 
 }
+
+
 
 /* Media queries for mobile responsiveness */
 
