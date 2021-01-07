@@ -110,6 +110,10 @@ p {
     margin-top: 0px;
 }
 
+h6 {
+    text-align: center;
+}
+
 /* Style border around the images */
 img{
     border: solid;
@@ -117,11 +121,14 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
+#profiles{
+    width: 200px;
+
+}
 #photo_me {
-    width: 250px;
+    width: 350px;
     border-radius: 50%;
 }
 
@@ -144,7 +151,10 @@ img{
     left: 0; 
 }
 
+.navbar-light .navbar-brand  {
 
+    font-size: smaller;
+}
 
 /* Media queries for mobile responsiveness */
 
@@ -200,7 +210,7 @@ img{
     }
 
     .navbar-brand {
-        font-size: 75%;
+        font-size: 30%;
         align-items: center;
     }
 
