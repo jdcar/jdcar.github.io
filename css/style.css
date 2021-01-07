@@ -9,6 +9,13 @@ November 14, 2020 */
     box-sizing: border-box;
 
 }
+
+
+
+#footer_index , #footer_portfolio, #footer_contact {
+    position: relative;
+
+}
 /* Set background color */
 body {
     background-color: #FFFAF0;
@@ -31,6 +38,12 @@ h2 {
     text-align: center;
     color: darkblue;
     
+
+}
+
+h5 {
+    font-family: 'Comfortaa', cursive;
+    color: darkblue;
 
 }
 /* Navigation bar style */
@@ -129,6 +142,7 @@ img{
 }
 #photo_me {
     width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
 
@@ -146,7 +160,7 @@ img{
 
 #footer_contact {
 
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0; 
 }
@@ -155,7 +169,12 @@ img{
 
     font-size: smaller;
 }
+#footer_contact, #footer_index , #footer_portfolio  {
 
+    position: relative;
+    bottom: 0;
+    left: 0; 
+}
 /* Media queries for mobile responsiveness */
 
 
@@ -180,7 +199,7 @@ img{
 
     #footer_contact, #footer_index , #footer_portfolio  {
 
-        position: fixed;
+        position: sticky;
         bottom: 0;
         left: 0; 
     }
@@ -188,7 +207,14 @@ img{
 }
 
 /* Smart phones */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
+
+    #photo_me {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
     .hero {
         display: none;
       }
@@ -214,7 +240,7 @@ img{
         align-items: center;
     }
 
-    #footer_index , #footer_portfolio  {
+    #footer_index , #footer_portfolio, #footer_contact  {
 
         position: relative;
         bottom: 0;
