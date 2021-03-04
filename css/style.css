@@ -8,7 +8,7 @@ January 8, 2021 */
 *{
     margin:0;
     padding: 0;
-    background-color: #FFFAF0;
+    /* background-color: #FFFAF0; */
     box-sizing: border-box;
 
 }
@@ -26,7 +26,8 @@ iframe {
 }
 /* Set background color */
 body {
-    background-color: #FFFAF0;
+    background-color: #445A67;
+    color: white;
 }
 
 /* Give name style */
@@ -34,8 +35,8 @@ h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 34px;
     text-align: left;
-    color: darkblue;
-    background-color: #9ED9B8;
+    color: #CCADB2;
+    /* background-color: #9ED9B8; */
     padding-top: 8px;
 
 }
@@ -44,28 +45,25 @@ h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 28px;
     text-align: center;
-    color: darkblue;
+    color: #CCADB2;
     
 
 }
 
 h5 {
     font-family: 'Comfortaa', cursive;
-    color: darkblue;
+    color: #CCADB2;
 
 }
 /* Navigation bar style */
 nav {
-    background-color: #9ED9B8;
+    font-family: 'Comfortaa', cursive;
+    background-color: #445A67;
     width: 100%;
     position: relative;
 }
 /* Style for nav buttons */
-#Contact-button, #Portfolio-button, #Aboutme-button {
 
-    background-color: #DCDCDC;
-    color: #006699;
-}
 /* Add hover pseudo to buttons */
 .nav-link:hover{
     background-color:#dcdcdc71;
@@ -137,8 +135,8 @@ h6 {
 
 /* Style border around the images */
 img{
-    border: solid;
-    border-color: #DCDCDC;
+    /* border: solid; */
+    /* border-color: #DCDCDC; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +183,17 @@ img{
 }
 /* Media queries for mobile responsiveness */
 
+a {
+    color: #F3BFB3;
+}
 
+a:hover {
+    color: #d87b66
+}
+
+.card-text {
+    color: black;
+}
 /* Tablets and smaller screens like a laptop */
 @media only screen and (max-width: 800px) {
 
