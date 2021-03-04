@@ -1,8 +1,7 @@
 # Profile
 http://jdcar.github.io
 
-Jamie Carlstone
-Profile
+Jamie Carlstone - Professional Profile
 
 ## Description
 
