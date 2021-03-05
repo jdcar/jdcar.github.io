@@ -10,6 +10,7 @@ January 8, 2021 */
     padding: 0;
     /* background-color: #FFFAF0; */
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -173,6 +174,8 @@ img{
 .navbar-light .navbar-brand  {
 
     font-size: smaller;
+    font-family: 'Comfortaa', cursive;
+
 }
 #footer_contact, #footer_index , #footer_portfolio  {
 
