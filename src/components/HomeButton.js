@@ -1,18 +1,20 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
+import Wrapper from "./Wrapper"
 
-import styled from 'styled-components'
-
-
-const Wrapper = styled.div`
-text-align: center;
-`
-
-
-function HomeButton() {
+const HomeButton = () => {
     return (
         <Wrapper>
-            <Button size="lg" variant="outline-secondary" style={{borderRadius: 0}}>Portfolio</Button>
+            <Link to="/portfolio"><Button
+                    className="home-button"
+                    size="lg" variant="outline-dark"
+                    style={
+                        {
+                            borderRadius: 0
+                        }
+                    }>Portfolio
+                </Button></Link>
         </Wrapper>
     )
 }

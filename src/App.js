@@ -10,23 +10,35 @@ import './App.css';
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
+import Navbar from './components/Nav'
+import CV from './pages/CV'
+import Bio from './pages/Bio'
+
 
 function App() {
   return (
       <Router>
-        <div>
         <Switch>
+          <Route path="/portfolio">
+            <Navbar />
+              <Portfolio />
+          </Route>
+          <Route path="/bio">
+            <Navbar />
+              <Bio /> 
+          </Route>
+          <Route path="/cv">
+            <Navbar />
+              <CV />
+          </Route>
+          <Route path="/contact">
+            <Navbar />
+              <Contact />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
         </Switch>
-        </div>
       </Router>
   );
 }
