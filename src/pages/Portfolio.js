@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from "axios";
 
 
@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Wrapper from '../components/Wrapper'
 import API from '../components/API'
+import Card from 'react-bootstrap/Card'
+import PortfolioCard from '../components/PortfolioCard';
+import Spinner from 'react-bootstrap/Spinner'
+
 const Portfolio = () => {
 
     const [data, setData] = useState(null)
@@ -16,56 +20,52 @@ const Portfolio = () => {
     useEffect(() => {
 
         axios.get("https://api.github.com/users/jdcar")
-        .then(res => {
-            setData(res)
-            console.log(res)
-        })
+            .then(res => {
+                setData(res)
+                console.log(res)
+            })
         // .then(setData(res))
     }, [])
 
     if (data) {
         return (
             <>
-            <Container>
-                <Row>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>
+                                    <img style={{ float: "right" }} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
+                                    <p>Jamie Carlstone</p>
+                                    <p>GitHub login: {data.data.login}</p>
+                                    <p>Repos: {data.data.public_repos}</p>
+                                    <p>Bio: {data.data.bio}</p>
+                                    <p>Location: {data.data.location}</p>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Body>
+                                    <PortfolioCard />
+                                </Card.Body>
+                            </Card>
+                        </Col>
 
-                    <Col>
-                        <img style={{float:"right"}} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{width:'150px'}}></img>
-                    
-                    </Col>
-                    <Col>
-                        <p>Jamie Carlstone</p>
-                        <p>github login: {data.data.login} repos: {data.data.public_repos}</p>
-                        <p>Bio: {data.data.bio}</p>
-                        <p>Location: {data.data.location}</p>
-                
-                    </Col>
-
-                </Row>
+                    </Row>
                 </Container>
             </>
         )
     } else {
         return (
             <Container>
-            <Wrapper>
-                <Row>
-                    <Col>
-                        <ProfilePicture />
-                    </Col>
-                    <Col>
-                        <p>Since October 2019 I have been the Authority Control Librarian at Northwestern
-                        University. Prior to my current role, I worked at the University of Chicago and the University of
-                        Illinois at Urbana-Champaign. I am currently in the Northwestern Coding Bootcamp.
-                    </p>
-                        <p>Research interests include serials, assessment, and copyright renewal. I am particularly interested
-                        in finding ways to use batch processes to improve catalog metadata. When I'm not working, I enjoying
-                        doing DIY projects, playing guitar, and spending time with my dog Studs.
-                </p>
-                    </Col>
-                </Row>
-            </Wrapper>
-        </Container>
+                {/* replace with spinner */}
+                <Spinner animation="border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+
+            </Container>
+
         )
     }
 
