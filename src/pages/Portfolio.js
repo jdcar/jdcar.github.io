@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 
-
-import ProfilePicture from '../components/ProfilePicture'
-import styled from 'styled-components'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Wrapper from '../components/Wrapper'
-import API from '../components/API'
 import Card from 'react-bootstrap/Card'
 import PortfolioCard from '../components/PortfolioCard';
 import Spinner from 'react-bootstrap/Spinner'
@@ -35,7 +30,7 @@ const Portfolio = () => {
                         <Col>
                             <Card>
                                 <Card.Body>
-                                    <img style={{ float: "right" }} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
+                                    <img style={{ float: "right" }} alt={data.data.name} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
                                     <p>Jamie Carlstone</p>
                                     <p>GitHub login: {data.data.login}</p>
                                     <p>Repos: {data.data.public_repos}</p>

@@ -20,9 +20,7 @@ const Home = () => {
             }
         }>
             <Col>
-                <Wrapper>
-                    [Cataloger]
-                </Wrapper>
+                
             </Col>
             <Col>
                 <Wrapper>
@@ -31,10 +29,7 @@ const Home = () => {
                 <HomeButton />
             </Col>
             <Col>
-                <Wrapper>
-                    <p>{"{"}Developer{"}"}</p>
-                </Wrapper>
-
+             
             </Col>
         </Row>
     )

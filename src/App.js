@@ -13,6 +13,7 @@ import Portfolio from './pages/Portfolio'
 import Navbar from './components/Nav'
 import CV from './pages/CV'
 import Bio from './pages/Bio'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -22,24 +23,30 @@ function App() {
           <Route path="/portfolio">
             <Navbar />
               <Portfolio />
+              <Footer />
           </Route>
           <Route path="/bio">
             <Navbar />
               <Bio /> 
+              <Footer />
           </Route>
           <Route path="/cv">
             <Navbar />
               <CV />
+              <Footer />
           </Route>
           <Route path="/contact">
             <Navbar />
               <Contact />
+              <Footer />
           </Route>
           <Route path="/">
             <Home />
+            
           </Route>
         </Switch>
       </Router>
+      
   );
 }
 

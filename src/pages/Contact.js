@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Wrapper from "../components/Wrapper"
+import Footer from '../components/Footer'
 
 function Contact() {
     return (
@@ -13,8 +14,10 @@ function Contact() {
             </Wrapper>
         </Container>
 
-        
-    </div>)
+        <Footer />
+    </div>
+    
+    )
 
 }
 export default Contact

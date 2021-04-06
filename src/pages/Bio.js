@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import axios from "axios";
+import React from 'react'
 
 import ProfilePicture from '../components/ProfilePicture'
-import styled from 'styled-components'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Wrapper from '../components/Wrapper'
-import API from '../components/API'
 import Card from 'react-bootstrap/Card'
 
 const Bio = () => {
