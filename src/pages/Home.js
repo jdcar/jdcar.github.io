@@ -14,9 +14,9 @@ const Home = () => {
     return (
         <Row style={
             {
-                padding: "50px",
+                padding: "10px",
                 marginTop: "50px",
-                height: "300px", backgroundColor: "#b3ffb3"
+                height: "300px", backgroundColor: "#97C8D6"
             }
         }>
             <Col>
@@ -24,11 +24,11 @@ const Home = () => {
             </Col>
             <Col>
                 <Wrapper>
-                    <h3> Jamie Carlstone</h3>
+                    <h1 style={{fontFamily: "'Dawning of a New Day', cursive"}}> Jamie Carlstone</h1>
                 </Wrapper>
                 <HomeButton />
                 <Wrapper>
-                <p>Librarian - Developer</p>
+                <h2 style={{fontFamily: "'Dawning of a New Day', cursive"}}>Librarian - Developer</h2>
                 </Wrapper>
                 
             </Col>
