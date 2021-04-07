@@ -7,7 +7,7 @@ const PortfolioCard = (props) => {
     return (
         <>
             {Projects.map(proj => (
-                <Card>
+                <Card key={proj.id}>
                     <Card.Body>
                         <h5>{proj.name}</h5>
                         <p>{proj.description}</p>

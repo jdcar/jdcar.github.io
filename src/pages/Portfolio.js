@@ -10,19 +10,19 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const Portfolio = () => {
 
-    const [data, setData] = useState(null)
+    const [gitHubData, setGitHubData] = useState(null)
 
     useEffect(() => {
 
         axios.get("https://api.github.com/users/jdcar")
             .then(res => {
-                setData(res)
+                setGitHubData(res)
                 console.log(res)
             })
         // .then(setData(res))
     }, [])
 
-    if (data) {
+    if (gitHubData) {
         return (
             <>
                 <Container>
@@ -30,12 +30,12 @@ const Portfolio = () => {
                         <Col>
                             <Card>
                                 <Card.Body>
-                                    <img style={{ float: "right" }} alt={data.data.name} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
+                                    <img style={{ float: "right" }} alt={gitHubData.data.name} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
                                     <p>Jamie Carlstone</p>
-                                    <p>GitHub login: {data.data.login}</p>
-                                    <p>Repos: {data.data.public_repos}</p>
-                                    <p>Bio: {data.data.bio}</p>
-                                    <p>Location: {data.data.location}</p>
+                                    <p>GitHub login: {gitHubData.data.login}</p>
+                                    <p>Repos: {gitHubData.data.public_repos}</p>
+                                    <p>Bio: {gitHubData.data.bio}</p>
+                                    <p>Location: {gitHubData.data.location}</p>
                                 </Card.Body>
                             </Card>
                         </Col>

@@ -11,42 +11,48 @@ const Projects = [
         deployUrl: "https://rocky-refuge-43458.herokuapp.com/",
         repositoryUrl: "https://github.com/n1flight/To_appy_or_not_to_apply",
         image: applyImg,
-        description: "A group project for Northwestern Coding Bootcamp. To Apply or Not to Apply is an online application for keeping track of your job hunt."
+        description: "A group project for Northwestern Coding Bootcamp. To Apply or Not to Apply is an online application for keeping track of your job hunt.",
+        id: 1
     },
     {
         name: "Javascript quiz",
         deployUrl: "https://jdcar.github.io/04-Web-APIs-Code-Quiz/",
         repositoryUrl: "https://github.com/jdcar/04-Web-APIs-Code-Quiz",
         image: javascriptQuizImg,
-        description: "An online five question Javascript quiz" 
+        description: "An online five question Javascript quiz",
+        id: 2
     },
     {
         name: "Weather app",
         deployUrl: "https://github.com/jdcar/06-Server-Side-APIs",
         repositoryUrl: "https://jdcar.github.io/06-Server-Side-APIs/",
         image: weatherAppImg,
-        description: "The weather app uses the OpenWeather API for up-to-date weather information. The program utilizes local storage and Bootstrap."
+        description: "The weather app uses the OpenWeather API for up-to-date weather information. The program utilizes local storage and Bootstrap.",
+        id: 3
     },
     {
         name: "Burger Logger",
         deployUrl: "https://infinite-ocean-95667.herokuapp.com/",
         repositoryUrl: "https://github.com/jdcar/burger-logger",
         image: burgerImg,
-        description: "An online app to keep track of burgers. Includes create, update, delete MySql queries."
+        description: "An online app to keep track of burgers. Includes create, update, delete MySql queries.",
+        id: 4
     },
     {
         name: "Rock & Roam",
         deployUrl: "https://glynismullankwok.github.io/musiclocations/",
         repositoryUrl: "https://github.com/glynismullankwok/musiclocations",
         image: rockRoamImg,
-        description: "Rock and Roam uses MusixMatch and other APIs to show songs about locations"
+        description: "Rock and Roam uses MusixMatch and other APIs to show songs about locations",
+        id: 5
     },
     {
         name: "Employee Tracker",
         deployUrl: null,
         repositoryUrl: "https://github.com/jdcar/employee-tracker",
         image: viewRolesImg,
-        description: "A command line program to keep track of employees using MySql"
+        description: "A command line program to keep track of employees using MySql",
+        id: 6
     }
 
 

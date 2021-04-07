@@ -5,8 +5,8 @@ const cv = () => {
 
     return (
     <Wrapper>
-        <iframe title="C.V. for Jamie Carlstone" src="https://drive.google.com/file/d/1DvXujQdAlm-HiPZMEtoCnbelBifMhME5/preview" width="640" height="480"></iframe>
-
+        {/* <a href url="https://drive.google.com/file/d/1DvXujQdAlm-HiPZMEtoCnbelBifMhME5/preview">Curriculum Vitae</a> */}
+        <a href="https://drive.google.com/file/d/1DvXujQdAlm-HiPZMEtoCnbelBifMhME5/preview">Curriculum Vitae</a>
     </Wrapper>
     )
 }
