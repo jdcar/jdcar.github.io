@@ -16,7 +16,7 @@ const Home = () => {
             {
                 padding: "50px",
                 marginTop: "50px",
-                height: "300px", backgroundColor: "#708090"
+                height: "300px", backgroundColor: "#b3ffb3"
             }
         }>
             <Col>
@@ -27,6 +27,10 @@ const Home = () => {
                     <h3> Jamie Carlstone</h3>
                 </Wrapper>
                 <HomeButton />
+                <Wrapper>
+                <p>Librarian - Developer</p>
+                </Wrapper>
+                
             </Col>
             <Col>
              
