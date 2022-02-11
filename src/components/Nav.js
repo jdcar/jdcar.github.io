@@ -20,12 +20,12 @@ const Navbar = () => {
             <Nav.Item>
                 <Nav.Link onClick={(event) => handleClick(event, "/portfolio")} href="/portfolio"><h5>Portfolio</h5></Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
                 <Nav.Link  onClick={(event) => handleClick(event, "/cv")} href="/cv"><h5>Curriculum Vitae</h5></Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
+            </Nav.Item> */}
+            {/* <Nav.Item>
                 <Nav.Link  onClick={(event) => handleClick(event, "/contact")} href="/contact"><h5>Contact</h5></Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
         </Nav>
     )
 }

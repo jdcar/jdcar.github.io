@@ -7,53 +7,41 @@ import viewRolesImg from '../images/view-roles.jpg'
 
 const Projects = [
     {
-        name: "To apply or not to apply",
-        deployUrl: "https://rocky-refuge-43458.herokuapp.com/",
-        repositoryUrl: "https://github.com/n1flight/To_appy_or_not_to_apply",
-        image: applyImg,
-        description: "A group project for Northwestern Coding Bootcamp. To Apply or Not to Apply is an online application for keeping track of your job hunt.",
+        name: "Call Number Update",
+        deployUrl: "",
+        language: "javascript",
+        repositoryUrl: "https://github.com/jdcar/alma-call-number-update",
+        // image: applyImg,
+        description: "Approximately 650 call numbers in our Alma holdings records needed their classification number changed. This program uses the Alma Retrieve Holdings Record and Update Holdings Record APIs to batched update from a csv file.",
         id: 1
     },
     {
-        name: "Javascript quiz",
-        deployUrl: "https://jdcar.github.io/04-Web-APIs-Code-Quiz/",
-        repositoryUrl: "https://github.com/jdcar/04-Web-APIs-Code-Quiz",
-        image: javascriptQuizImg,
-        description: "An online five question Javascript quiz",
+        name: "Generate Normalization Rule",
+        deployUrl: "",
+        language: "javascript",
+        repositoryUrl: "https://github.com/jdcar/generate-normalization-rule",
+        // image: applyImg,
+        description: "This is a command line application I use to generate Alma normalization rules. The rules can be used and reused to update subject headings in the bibliographic record.",
         id: 2
     },
     {
-        name: "Weather app",
-        deployUrl: "https://github.com/jdcar/06-Server-Side-APIs",
-        repositoryUrl: "https://jdcar.github.io/06-Server-Side-APIs/",
-        image: weatherAppImg,
-        description: "The weather app uses the OpenWeather API for up-to-date weather information. The program utilizes local storage and Bootstrap.",
+        name: "MARC Language Guesser",
+        deployUrl: "",
+        language: "python",
+        repositoryUrl: "https://github.com/jdcar/marc-language-guesser",
+        // image: applyImg,
+        description: "Our catalog had a collection of records that were missing information about the language of the work. This program uses guess_language-spirit to guess the language based on the catalog record and uses it to build a new 008 field.",
         id: 3
     },
     {
-        name: "Burger Logger",
-        deployUrl: "https://infinite-ocean-95667.herokuapp.com/",
-        repositoryUrl: "https://github.com/jdcar/burger-logger",
-        image: burgerImg,
-        description: "An online app to keep track of burgers. Includes create, update, delete MySql queries.",
+        name: "MARC Delimiter Fixer Tool",
+        deployUrl: "https://jdcar.github.io/delimiter-fix/",
+        language: "javascript",
+        repositoryUrl: "https://github.com/jdcar/delimiter-fix",
+        // image: applyImg,
+        description: "There is a lack of standardization for how the subfield delimiters in the MARC record appears between systems. Catalogers are often having to copy and paste MARC fields only to have to replace the subfield delimiter as well. This is a webform that takes a form of the MARC field and converts it to each delimiter type out there for easy copying. ",
         id: 4
     },
-    {
-        name: "Rock & Roam",
-        deployUrl: "https://glynismullankwok.github.io/musiclocations/",
-        repositoryUrl: "https://github.com/glynismullankwok/musiclocations",
-        image: rockRoamImg,
-        description: "Rock and Roam uses MusixMatch and other APIs to show songs about locations",
-        id: 5
-    },
-    {
-        name: "Employee Tracker",
-        deployUrl: null,
-        repositoryUrl: "https://github.com/jdcar/employee-tracker",
-        image: viewRolesImg,
-        description: "A command line program to keep track of employees using MySql",
-        id: 6
-    }
 
 
 ]
