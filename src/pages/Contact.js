@@ -12,7 +12,6 @@ function Contact() {
     <div>
         <Container>
             <Wrapper>
-            <h6>jamie [dot] carlstone [at] northwestern [dot] edu</h6>
             <p><a href="https://github.com/jdcar" rel="noreferrer" target="_blank"><img src={github} style={{width:"100px"}} alt="github"></img></a></p>
             <p><a href="https://www.linkedin.com/in/jamie-carlstone-4164aba6/" rel="noreferrer" target="_blank"><img src={linkedin} style={{width:"100px"}} alt="linked in"></img></a></p>
             <p><a href="https://orcid.org/0000-0002-9288-328X" rel="noreferrer" target="_blank"><img src={orcid} style={{width:"50px"}} alt="orcid"></img></a></p>

@@ -27,20 +27,9 @@ const Portfolio = () => {
             <>
                 <Container>
                     <Row>
+                        
                         <Col>
-                            <Card>
-                                <Card.Body>
-                                    <img style={{ float: "right" }} alt={gitHubData.data.name} src="https://avatars.githubusercontent.com/u/34754596?v=4" style={{ width: '150px', borderRadius: "50%" }}></img>
-                                    <p>Jamie Carlstone</p>
-                                    <p>GitHub login: {gitHubData.data.login}</p>
-                                    <p>Repos: {gitHubData.data.public_repos}</p>
-                                    <p>Bio: {gitHubData.data.bio}</p>
-                                    <p>Location: {gitHubData.data.location}</p>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
+                            <Card style={{ width: '75%', marginLeft: "auto", marginRight: "auto" }}>
                                 <Card.Body>
                                     <PortfolioCard />
                                 </Card.Body>

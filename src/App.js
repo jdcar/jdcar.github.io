@@ -25,24 +25,26 @@ function App() {
               <Portfolio />
               <Footer />
           </Route>
-          <Route path="/bio">
+          {/* <Route path="/bio">
             <Navbar />
-              <Bio /> 
+              
               <Footer />
-          </Route>
-          <Route path="/cv">
+          </Route> */}
+          {/* <Route path="/cv">
             <Navbar />
               <CV />
               <Footer />
-          </Route>
-          <Route path="/contact">
+          </Route> */}
+          {/* <Route path="/contact">
             <Navbar />
               <Contact />
               <Footer />
-          </Route>
+          </Route> */}
           <Route path="/">
-            <Home />
-            
+            {/* <Home /> */}
+            <Navbar />
+            <Bio /> 
+            <Footer />
           </Route>
         </Switch>
       </Router>

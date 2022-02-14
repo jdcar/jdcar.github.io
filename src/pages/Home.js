@@ -1,42 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from 'react'
+import axios from "axios";
 
-import HomeButton from '../components/HomeButton'
+import ProfilePicture from '../components/ProfilePicture'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import styled from 'styled-components'
+import Container from 'react-bootstrap/Container'
+import Wrapper from '../components/Wrapper'
+import Card from 'react-bootstrap/Card'
+import PortfolioCard from '../components/PortfolioCard';
+import Spinner from 'react-bootstrap/Spinner'
 
-const Wrapper = styled.div`
-text-align: center;
-padding: 25px;
-`
-const Home = () => {
+
+const Bio = () => {
+
 
     return (
-        <Row style={
-            {
-                padding: "10px",
-                marginTop: "50px",
-                height: "300px", backgroundColor: "#97C8D6"
-            }
-        }>
-            <Col>
-                
-            </Col>
-            <Col>
-                <Wrapper>
-                    <h1 style={{fontFamily: "'Dawning of a New Day', cursive"}}> Jamie Carlstone</h1>
-                </Wrapper>
-                <HomeButton />
-                <Wrapper>
-                <h2 style={{fontFamily: "'Dawning of a New Day', cursive"}}>Librarian - Developer</h2>
-                </Wrapper>
-                
-            </Col>
-            <Col>
-             
-            </Col>
-        </Row>
+        <>
+            <Container>
+                <Row>
+                    <Card>
+                        <Card.Body>
+                            <Row>
+                                <Col>
+                                    <ProfilePicture />
+                                </Col>
+                                <Col>
+                                <h1>Jamie Carlstone</h1>
+                                    <p>I am a metadata librarian and developer with an MLIS and coding bootcamp certificate. I enjoy solving metadata problems with code. Experienced with javascript, python, react.
+                                    </p>
+                                    
+                                    <p>In my freetime I like playing guitar, spin class, and hanging out with my puggle Studs.</p>
+                                   
+                                </Col>
+                            </Row>
+
+                        </Card.Body>
+                    </Card>
+                </Row>
+            </Container>
+        </>
     )
 
+
+
+
+
 }
-export default Home
+
+export default Bio
