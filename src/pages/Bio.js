@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import axios from "axios";
+import React, { useState } from 'react'
 
 import ProfilePicture from '../components/ProfilePicture'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Wrapper from '../components/Wrapper'
 import Card from 'react-bootstrap/Card'
-import PortfolioCard from '../components/PortfolioCard';
-import Spinner from 'react-bootstrap/Spinner'
+
 
 
 const Bio = () => {
@@ -21,7 +18,7 @@ const Bio = () => {
         <>
             <Container>
                 <Row>
-                    <Card>
+                    <Card style={{ width: '75%', marginLeft: "auto", marginRight: "auto" }}>
                         <Card.Body>
                             <Row>
                                 <Col>
